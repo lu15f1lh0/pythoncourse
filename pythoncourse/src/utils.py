@@ -96,4 +96,12 @@ def interpret(line_from_source, col_index, **kargs):
         line.append(coltype(line_from_source[idx]))
     return line
 
+def validarTelefone(telefone):
+	t = telefone
+	if ((len(t) == 13 or len(t) == 14) and (t[0] == '(' and t[3] == ')'))
+		print "Telefone Validado"
+	else
+		raise NumeroDeTelefoneInvalido(1)
+
+
 
